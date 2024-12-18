@@ -1,10 +1,10 @@
 {
   "hosting": {
-    "public": "output",
+    "public": ".output",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "!**/output/**",
+      "!**/.output/**",
       "**/node_modules/**"
     ],
     "rewrites": [
