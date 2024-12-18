@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   dir: "./",
   buildDir: ".nuxt",
   generate: {
-    dir: "dist",
+    dir: "output/public/dist",
   },
   devtools: { enabled: false },
   router: { middleware: ["auth"] },
