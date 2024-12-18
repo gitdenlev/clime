@@ -1,0 +1,19 @@
+:root {
+  --background-color: #E3F2FD;
+  --text-color: #424242;
+  --background-image: url('/sky.jpg'); /* Світлий фон */
+}
+
+.dark {
+  --background-color: #1B1F3B;
+  --text-color: #E5E5E5;
+  --background-image: url('/lol.jpg'); /* Темний фон */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  background-image: var(--background-image) !important; /* Фон оновлюється через змінну */
+  background-size: cover; /* Додає масштабування */
+  background-repeat: no-repeat; /* Забороняє повторення */
+}
