@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  dir: "./",
+  buildDir: ".nuxt",
+  generate: {
+    dir: "dist",
+  },
   devtools: { enabled: false },
   router: { middleware: ["auth"] },
   plugins: [{ src: "~/plugins/firebase.ts", mode: "client" }],
