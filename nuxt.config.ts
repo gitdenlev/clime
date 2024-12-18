@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  nitro: {
+    firebase: {
+      gen: 2
+    }
+  },
   devtools: { enabled: false },
   router: { middleware: ["auth"] },
   plugins: [{ src: "~/plugins/firebase.ts", mode: "client" }],
